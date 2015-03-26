@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html ng-app="moviebuzz">
+<head>
+<title>MovieBuzz</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="layout21/styles.css">
+<script src="Scripts/angular.js"></script>
+<script src="Scripts/movie.js"></script>
+</head>
+<body>
+	<div id="doc" class="yui-t7" ng-controller="mbController">
+		<div id="hd">
+			<div id="header">
+				<h1>MovieBuzzzz</h1>
+				<br /> <br /> Movie Names: <input type="text" size="35"
+					name="mname" ng-model="moviename1" /> <input type="text"
+					name="mname" size="35" ng-model="moviename2" />
+
+				<button type="button" ng-click="movieDetails()">Go</button>
+
+			</div>
+		</div>
+		<div id="bd">
+			<div id="yui-main">
+				<div class="yui-b">
+					<div class="yui-g">
+						<div class="yui-g first">
+							<div class="yui-u first">
+								<div class="content">Data from server {{ movieDetails }}</div>
+							</div>
+							<div class="yui-u">
+								<div class="content">Twitter Statistics</div>
+							</div>
+						</div>
+						<div class="yui-g">
+							<div class="yui-u first">
+								<div class="content">Movie 2 details</div>
+							</div>
+							<div class="yui-u">
+								<div class="content">Twitter statistics of movie 2</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="yui-b">
+				<div id="second">
+					<!-- Here's where our visualization will go -->
+					<gh-visualization val="data"></gh-visualization>
+				</div>
+			</div>
+			<div class="yui-b">
+				<div id="third">Second Visualization</div>
+			</div>
+			<div class="yui-b">
+				<div id="fourth">Second Visualization</div>
+			</div>
+		</div>
+		<div id="ft">
+			<div id="footer">CSE 6339 - Data Science and Computational
+				Journalism Project</div>
+		</div>
+	</div>
+</body>
+</html>
