@@ -6,13 +6,13 @@ from tweepy import Stream
 
 # Go to http://apps.twitter.com and create an app.
 # The consumer key and secret will be generated for you after
-consumer_key="UywPMW6g2rqR2OsvhJvk2Vhil"
-consumer_secret="Wv2ogw7ZVTGyGBcmcDVgrlpSTkQTfMMgVMganwkVJmwKMJUHdP"
+consumer_key=""
+consumer_secret=""
 
 # After the step above, you will be redirected to your app's page.
 # Create an access token under the the "Your access token" section
-access_token="974180316-ms2unyAqqt9XEAhWKMBf5GyelV3wGp3J7p00aML8"
-access_token_secret="sBF4tc4apqDZUuiNvLfcdqbdktIutzOpqf9ZoRmlYHtEI"
+access_token=""
+access_token_secret=""
 
 class StdOutListener(StreamListener):
     """ A listener handles tweets are the received from the stream.
