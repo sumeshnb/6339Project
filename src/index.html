@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Case</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet"  href="lib/bootswatch/bootswatch.min.css" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet"  href="mystyle.css" />
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <!--
+        <script src="lib/bootswatch/bootswatch.js"></script>
+    -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="jquery-ui/jquery-ui.js"></script>
+        <script src="scripts/moviebuzz.js"></script>      
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default RbtnMargin LbtnMargin">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MovieBuzz</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Select Movie<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Cinderella</a></li>
+                        <li><a href="#">Fast and Furious 7</a></li>
+                        <li><a href="#">Chappie</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            -->
+                <form class="navbar-form navbar-left" role="search" id="search_form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="searchbox" placeholder="Enter Movie Name..." id="search_box">
+                    </div>
+                    <button type="submit" class="btn btn-default" name="searchbtn" id="search_btn">Add to Compare</button>
+                </form>
+                <p class="navbar-text navbar-right">Application to compare movies </p>
+            </div>
+        </div>
+        </nav>
+        <!-- <div class="spacer30"></div> -->
+        <div class="RbtnMargin LbtnMargin" id="max_movie">
+        </div>
+        <div class="spacer20"></div>
+        <!-- <div class="RbtnMargin LbtnMargin"> -->
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2" id="movie1">
+                <div class="panel panel-primary">
+                    <div class="panel-heading clearfix">
+                        <div class="btn btn-default btn-sm pull-right clickable" id="movie_btn1">X</div>
+                        <h3 class="panel-title pull-left" id="title1">Movie 1</h3>
+                    </div>
+                    <div class="panel-body" id="movie_body1">
+                    </div>
+                    <div class="panel-footer" id="footer1">Panel Footer</div>
+                </div>
+            </div>
+            
+            <div class="col-md-2" id="movie2">
+                <div class="panel panel-success">
+                    <div class="panel-heading clearfix">
+                        <div class="btn btn-default btn-sm pull-right clickable" id="movie_btn2">X</div>  
+                        <h3 class="panel-title pull-left" id="title2">Movie 2</h3>
+                    </div>
+                    <div class="panel-body" id="movie_body2">
+                       
+                    </div>
+                    <div class="panel-footer" id="footer2">Panel Footer</div>
+                </div>
+            </div>
+            <div class="col-md-2" id="movie3">
+                <div class="panel panel-info">
+                    <div class="panel-heading clearfix">
+                        <div class="btn btn-default btn-sm pull-right clickable" id="movie_btn3">X</div>
+                        <h3 class="panel-title pull-left" id="title3">Movie 3</h3>
+                    </div>
+                    <div class="panel-body" id="movie_body3">
+                        
+                    </div>
+                    <div class="panel-footer" id="footer3">Panel Footer</div>
+                </div>
+            </div>
+            <div class="col-md-2" id="movie4">
+                <div class="panel panel-warning">
+                    <div class="panel-heading clearfix">
+                        <div class="btn btn-default btn-sm pull-right clickable" id="movie_btn4">X</div>
+                        <h3 class="panel-title pull-left" id="title4">Movie 4</h3>
+                    </div>
+                    <div class="panel-body" id="movie_body4">
+                        
+                    </div>
+                    <div class="panel-footer" id="footer4">Panel Footer</div>
+                </div>
+            </div>
+            <div class="col-md-2" id="movie5">
+                <div class="panel panel-danger">
+                    <div class="panel-heading clearfix">
+                        <div class="btn btn-default btn-sm pull-right clickable" id="movie_btn5">X</div>
+                        <h3 class="panel-title pull-left" id="title5">Movie 5</h3>
+                    </div>
+                    <div class="panel-body" id="movie_body5">
+                    </div>
+                    <div class="panel-footer" id="footer5">Panel Footer</div>
+                </div>
+            </div> 
+        <!-- </div> -->
+    </div>
+        <hr class="RbtnMargin LbtnMargin">
+        <div class="spacer20"></div>
+        <a href="#" class="btn btn-primary btn-lg clickable pull-right RbtnMargin" id="compare_btn">Compare</a>
+        <div class="spacer40"></div>
+        <ul class="nav nav-tabs RbtnMargin LbtnMargin">
+            <li class="active"><a href="#visualization1" data-toggle="tab">Bar Chart</a></li>
+            <li><a href="#visualization2" data-toggle="tab">Donut Chart</a></li>
+            <li><a href="#visualization3" data-toggle="tab">Visualization3</a></li>
+            <li><a href="#visualization4" data-toggle="tab">Visualization4</a></li>
+            <li><a href="#visualization5" data-toggle="tab">Visualization5</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content RbtnMargin LbtnMargin">
+            <div class="tab-pane fade active in" id="visualization1">
+                <!-- <p>pie chart</p> -->
+            </div>
+            <div class="tab-pane" id="visualization2">
+                <!-- <p>some other chart</p> -->
+            </div>
+            <div class="tab-pane fade" id="visualization3">
+                <!-- <p>some other chart</p> -->
+            </div>
+            <div class="tab-pane fade" id="visualization4">
+                <!-- <p>some other chart</p> -->
+            </div>
+            <div class="tab-pane fade" id="visualization5">
+                <!-- <p>some other chart</p> -->
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-bottom RbtnMargin LbtnMargin">
+            <div class="pull-right">
+                 <h5><b>CSE 6339 - Data Science and Computational Journalism</b></h5>&nbsp;&nbsp
+            </div>
+        </nav>
+    </body>
+</html>

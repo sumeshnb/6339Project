@@ -1,0 +1,57 @@
+cinderella  									
+Fast and furious 7
+The gunman 											Yes
+Do you believe
+Run all night
+Kingsman
+Insurgent
+Chappie
+Focus
+Get hard
+home
+Woman in gold
+It follows
+The Longest Ride
+Ex Machina
+Desert Dancer
+Clouds of Sils Maria
+Kill Me Three Times (2014) 							Yes
+Lost River
+While We're Young (2014)							Yes
+Danny Collins 
+The Second Best Exotic Marigold Hotel 				Yes
+Fifty Shades of Grey
+Into the Woods
+The Imitation Game
+Seventh Son
+The SpongeBob Movie: Sponge Out of Water
+Paddington
+American Sniper
+Night at the Museum: Secret of the Tomb
+
+
+
+include these:
+--------------
+
+Paul Blart: Mall Cop
+Unfriended (2014)
+Monkey Kingdom (2015)
+
+Opening This Week - April 24
+-----------------------------
+Little Boy (2015)
+The Water Diviner (2014)
+The Age of Adaline (2015)
+Adult Beginners (2014)
+
+
+
+
+
+
+
+
+
+
+'cinderella','furious7','the gunman','thegunman','do you believe','run all night','kingsman','insurgent','insurgentmovie','chappie','chappiemovie','chappiethemovie','focus movie','gethard','home movie','homemovie','DreamWorksHOME','woman in gold','itfollows','itfollowsfilm','get hard','gethard',"The Longest Ride","thelongestride","longestride","Ex Machina","ExMachina","Desert Dancer","DesertDancer","Clouds of Sils Maria","CloudsOfSilsMaria","Kill Me Three Times","KillMeThreeTimes","Lost River","LostRiver","While We're Young","selma","Danny Collins","DannyCollins","The Second Best Exotic Marigold Hotel","Fifty Shades of Grey","FiftyShades","Into the Woods","IntotheWoods","The Imitation Game","TheImitationGame","Seventh Son","SeventhSon","The SpongeBob Movie: Sponge Out of Water","SpongeBobMovie","Paddington","American Sniper","AmericanSniper","Night at the Museum: Secret of the Tomb"
